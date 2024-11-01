@@ -1,0 +1,10 @@
+#headshot {
+  border-radius: 5rem;
+  height: 25rem;
+  width: auto;
+}
+#project-image {
+  border-radius: 2rem;
+  height: 15rem;
+  width: auto;
+}
