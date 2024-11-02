@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.social-logo {
+  height: 10rem;
+  width: auto;
+}
+
 #headshot {
   border-radius: 5rem;
   height: 25rem;

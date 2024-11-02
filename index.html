@@ -12,6 +12,7 @@
       <ul>
         <li><a href="#about-me">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#links">Links</a></li>
       </ul>
     </nav>
@@ -60,29 +61,93 @@
       <h1>Projects</h1>
       <div class="project" id="project-1">
         <h2 class="project-name">Fisherman Game</h2>
+        <ul class="tech-stack">
+          <li>Python</li>
+          <li>Pygame</li>
+        </ul>
         <img
           id="project-image"
           src="images/fisherman_project.png"
           alt="fisherman game screenshot"
         />
-        <p class="project-description"></p>
+        <p class="project-description">
+          This 2D fishing game, developed using Python and the Pygame library,
+          features engaging gameplay elements such as player movement, object
+          spawning, and collision detection. Game components are structured
+          using object-oriented programming, with modular classes that
+          facilitate efficient development, easy maintenance, and potential for
+          future expansion. The game's visual experience is enhanced through
+          sprite animation, integrated seamlessly to create smooth, dynamic
+          interactions between the player and game environment.
+        </p>
       </div>
+    </div>
+
+    <!--CONTACT FORM-->
+    <div id="contact">
+      <h1>Connect with me!</h1>
+      <form id="form">
+        <div class="field">
+          <label for="from_name">Name: </label>
+          <input
+            type="text"
+            name="from_name"
+            id="from_name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="field">
+          <label for="email_id">Email: </label>
+          <input
+            type="text"
+            name="email_id"
+            id="email_id"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="field">
+          <label for="message">Message: </label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Say something nice!"
+          />
+        </div>
+
+        <input type="submit" id="button" value="Send Email" />
+      </form>
     </div>
 
     <!--LINKS SECTION-->
     <div id="links">
-      <h1>Connect with me!</h1>
       <div id="links-logos">
         <a href="https://www.linkedin.com/in/william-jijon/">
-          <img src="" alt="linkedin profile" />
+          <img
+            class="social-logo"
+            src="images/linkedin_logo.png"
+            alt="linkedin profile"
+          />
         </a>
         <a href="https://github.com/WJijon223">
-          <img src="" alt="github" />
+          <img
+            class="social-logo"
+            src="images/github_logo.png"
+            alt="github profile"
+          />
         </a>
       </div>
     </div>
 
     <!--SCRIPTS-->
-    <script src="script.js"></script>
+    <script src="emailForm.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("ROSvwow1kukm2SERs");
+    </script>
   </body>
 </html>
