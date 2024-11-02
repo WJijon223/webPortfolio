@@ -1,5 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* sorting out segment sizes, colors, fonts, etc. */
 * {
   box-sizing: border-box;
+  --main-color: hsl(191, 79%, 72%);
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.segment {
+  height: 60rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* navigation bar */
+.navbar {
+  background-color: var(--main-color);
+  height: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-sections {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.navbar-sections a {
+  color: white;
+  text-decoration: none;
+}
+
+/* about me segment */
+.text-description {
+  width: 50%;
+  margin-right: 10rem;
 }
 
 .social-logo {
@@ -9,7 +56,7 @@
 
 #headshot {
   border-radius: 5rem;
-  height: 25rem;
+  height: 20rem;
   width: auto;
 }
 #project-image {

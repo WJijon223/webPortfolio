@@ -8,8 +8,8 @@
   </head>
   <body>
     <!--NAVIGATION BAR-->
-    <nav id="navbar">
-      <ul>
+    <nav class="navbar">
+      <ul class="navbar-sections">
         <li><a href="#about-me">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -18,7 +18,7 @@
     </nav>
 
     <!--TITLE SECTION-->
-    <div id="title">
+    <div class="segment" id="title">
       <h1>William Jijon</h1>
       <div class="typing-container">
         <span id="typing-text"></span>
@@ -26,9 +26,9 @@
     </div>
 
     <!--ABOUT-ME SECTION-->
-    <div id="about-me">
-      <h1>About Me</h1>
+    <div class="segment about_me" id="about-me">
       <div class="text-description">
+        <h1 style="text-decoration: underline">About Me</h1>
         <p>
           Hello, everyone! My name is William Jijon and I am a sophomore
           studying computer science at Farmingdale State College! My passion for
@@ -46,30 +46,24 @@
           on new challenges in software development.
         </p>
       </div>
-      <div class="section-image">
-        <img
-          id="headshot"
-          src="images/headshot.png"
-          alt="a handsome young man"
-        />
-      </div>
+      <img id="headshot" src="images/headshot.png" alt="a handsome young man" />
       <div id="tech-stack-logos"></div>
     </div>
 
     <!--PROJECTS SECTION-->
-    <div id="projects">
+    <div class="segment" id="projects">
       <h1>Projects</h1>
       <div class="project" id="project-1">
-        <h2 class="project-name">Fisherman Game</h2>
-        <ul class="tech-stack">
-          <li>Python</li>
-          <li>Pygame</li>
-        </ul>
         <img
           id="project-image"
           src="images/fisherman_project.png"
           alt="fisherman game screenshot"
         />
+        <h2 class="project-name">Fisherman Game</h2>
+        <ul class="tech-stack">
+          <li>Python</li>
+          <li>Pygame</li>
+        </ul>
         <p class="project-description">
           This 2D fishing game, developed using Python and the Pygame library,
           features engaging gameplay elements such as player movement, object
@@ -84,7 +78,7 @@
     </div>
 
     <!--CONTACT FORM-->
-    <div id="contact">
+    <div class="segment" id="contact">
       <h1>Connect with me!</h1>
       <form id="form">
         <div class="field">
