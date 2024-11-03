@@ -42,6 +42,18 @@ p {
   color: white;
   text-decoration: none;
 }
+/* title section */
+#title {
+  background-image: url("images/horizon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+}
+
+#title h1 {
+  margin-bottom: 10rem;
+}
 
 /* about me segment */
 .about-me-description {
@@ -49,15 +61,46 @@ p {
   margin-right: 10rem;
 }
 
+.about-me-right {
+  text-align: center;
+}
+
+#headshot {
+  border-radius: 5rem;
+  height: 20rem;
+  width: auto;
+}
+
+.tech-logo {
+  height: 5rem;
+  width: auto;
+}
+
+#tech-stack-logos {
+  margin-top: 1.5rem;
+}
+
 /* projects segment */
 .project-description {
   width: 50%;
   margin-left: 10rem;
+  color: white;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color);
 }
 
 .project {
   display: flex;
   justify-content: center;
+}
+
+.project-image {
+  display: flex;
+  align-items: center;
 }
 
 .tech-stack {
@@ -74,12 +117,6 @@ p {
 
 #links {
   background-color: var(--main-color);
-}
-
-#headshot {
-  border-radius: 5rem;
-  height: 20rem;
-  width: auto;
 }
 #project-image {
   border-radius: 2rem;
