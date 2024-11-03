@@ -44,14 +44,36 @@ p {
 }
 
 /* about me segment */
-.text-description {
+.about-me-description {
   width: 50%;
   margin-right: 10rem;
 }
 
+/* projects segment */
+.project-description {
+  width: 50%;
+  margin-left: 10rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.tech-stack {
+  margin: 0.75rem 0;
+}
+
+/* Email form */
+
+/* Socials */
 .social-logo {
   height: 10rem;
   width: auto;
+}
+
+#links {
+  background-color: var(--main-color);
 }
 
 #headshot {

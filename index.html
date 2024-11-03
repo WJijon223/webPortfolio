@@ -26,8 +26,8 @@
     </div>
 
     <!--ABOUT-ME SECTION-->
-    <div class="segment about_me" id="about-me">
-      <div class="text-description">
+    <div class="segment" id="about-me">
+      <div class="about-me-description">
         <h1 style="text-decoration: underline">About Me</h1>
         <p>
           Hello, everyone! My name is William Jijon and I am a sophomore
@@ -52,28 +52,30 @@
 
     <!--PROJECTS SECTION-->
     <div class="segment" id="projects">
-      <h1>Projects</h1>
+      <!-- <h1>Projects</h1> -->
       <div class="project" id="project-1">
         <img
           id="project-image"
           src="images/fisherman_project.png"
           alt="fisherman game screenshot"
         />
-        <h2 class="project-name">Fisherman Game</h2>
-        <ul class="tech-stack">
-          <li>Python</li>
-          <li>Pygame</li>
-        </ul>
-        <p class="project-description">
-          This 2D fishing game, developed using Python and the Pygame library,
-          features engaging gameplay elements such as player movement, object
-          spawning, and collision detection. Game components are structured
-          using object-oriented programming, with modular classes that
-          facilitate efficient development, easy maintenance, and potential for
-          future expansion. The game's visual experience is enhanced through
-          sprite animation, integrated seamlessly to create smooth, dynamic
-          interactions between the player and game environment.
-        </p>
+        <div class="project-description">
+          <h2 class="project-name">Fisherman Game</h2>
+          <ul class="tech-stack">
+            <li>Python</li>
+            <li>Pygame</li>
+          </ul>
+          <p>
+            This 2D fishing game, developed using Python and the Pygame library,
+            features engaging gameplay elements such as player movement, object
+            spawning, and collision detection. Game components are structured
+            using object-oriented programming, with modular classes that
+            facilitate efficient development, easy maintenance, and potential
+            for future expansion. The game's visual experience is enhanced
+            through sprite animation, integrated seamlessly to create smooth,
+            dynamic interactions between the player and game environment.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -101,12 +103,11 @@
         </div>
         <div class="field">
           <label for="message">Message: </label>
-          <input
-            type="text"
+          <textarea
             name="message"
             id="message"
             placeholder="Say something nice!"
-          />
+          ></textarea>
         </div>
 
         <input type="submit" id="button" value="Send Email" />
