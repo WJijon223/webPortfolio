@@ -28,6 +28,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
 }
 
 .navbar-sections {
@@ -35,7 +38,7 @@ p {
   list-style-type: none;
   align-items: center;
   gap: 2rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .navbar-sections a {
@@ -84,13 +87,31 @@ p {
 .project-description {
   width: 50%;
   margin-left: 10rem;
-  color: white;
 }
 
 #projects {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.project-segment {
   background-color: var(--main-color);
+  color: white;
+  height: 45rem;
+}
+
+.project-segment h1 {
+  font-size: 6rem;
+  padding-left: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  height: 10%;
+}
+
+.project-name {
+  font-size: 1.7rem;
 }
 
 .project {
@@ -115,8 +136,13 @@ p {
   width: auto;
 }
 
+#links-logos {
+  text-align: center;
+}
+
 #links {
   background-color: var(--main-color);
+  border-bottom: 0;
 }
 #project-image {
   border-radius: 2rem;
