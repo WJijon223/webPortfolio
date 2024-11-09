@@ -84,48 +84,41 @@ p {
 }
 
 /* projects segment */
-.project-description {
-  width: 50%;
-  margin-left: 10rem;
-}
-
-#projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-}
-
 .project-segment {
   background-color: var(--main-color);
   color: white;
-  height: 45rem;
+  height: 60rem;
 }
 
 .project-segment h1 {
-  font-size: 6rem;
-  padding-left: 8rem;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-  height: 10%;
+  font-size: 4.5rem;
+  margin: 1rem 2rem;
 }
 
-.project-name {
-  font-size: 1.7rem;
-}
-
-.project {
+.project-section {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .project-image {
   display: flex;
+  width: 45%;
   align-items: center;
 }
 
-.tech-stack {
-  margin: 0.75rem 0;
+.project-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 3rem;
+}
+
+#tech-stack {
+  margin: 0.5rem 0;
+}
+
+.project-description {
+  width: 50%;
 }
 
 /* Email form */
