@@ -99,6 +99,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .project-image {
@@ -122,6 +123,37 @@ p {
 }
 
 /* Email form */
+#contact {
+  flex-direction: column;
+  font-size: 2.5rem;
+  height: 50rem;
+}
+
+form {
+  width: 40%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* border: 5px solid black; */
+}
+
+input,
+textarea {
+  font-size: 1.25rem;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+}
 
 /* Socials */
 .social-logo {
