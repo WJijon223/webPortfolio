@@ -12,6 +12,20 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 800px) {
+  #about-me {
+    flex-direction: column;
+    height: 70rem;
+    align-items: center;
+  }
+
+  .about-me-description {
+    margin-right: 0 !important;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
 .segment {
   height: 60rem;
   display: flex;
@@ -59,7 +73,19 @@ p {
 }
 
 #title h1 {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+#title-text {
+  margin-bottom: 3rem;
+}
+
+#typing-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* about me segment */
@@ -91,7 +117,7 @@ p {
 .project-segment {
   background-color: var(--main-color);
   color: white;
-  height: 60rem;
+  height: 40rem;
 }
 
 .project-segment h1 {
