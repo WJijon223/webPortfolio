@@ -28,12 +28,16 @@ html {
 
 @media (max-width: 600px) {
   #about-me {
-    height: 100rem;
+    height: 105rem;
   }
 
   .project-segment {
     height: 60rem !important;
     flex-direction: column;
+  }
+
+  .navbar-sections {
+    gap: 1rem !important;
   }
 }
 
