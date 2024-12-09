@@ -26,6 +26,17 @@ html {
   }
 }
 
+@media (max-width: 600px) {
+  #about-me {
+    height: 100rem;
+  }
+
+  .project-segment {
+    height: 50rem !important;
+    flex-direction: column;
+  }
+}
+
 .segment {
   height: 60rem;
   display: flex;
