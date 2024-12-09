@@ -32,7 +32,7 @@ html {
   }
 
   .project-segment {
-    height: 50rem !important;
+    height: 60rem !important;
     flex-direction: column;
   }
 }
