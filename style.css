@@ -32,12 +32,12 @@ html {
   }
 
   .project-segment {
-    height: 60rem !important;
+    height: 70rem !important;
     flex-direction: column;
   }
 
   .navbar-sections {
-    gap: 1rem !important;
+    gap: 0.5rem !important;
   }
 }
 
