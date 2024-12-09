@@ -38,6 +38,7 @@ html {
 
   .navbar-sections {
     gap: 1rem !important;
+    margin-right: 0 !important;
   }
 }
 
