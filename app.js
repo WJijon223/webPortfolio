@@ -1,5 +1,5 @@
 "use strict";
-import Typed from "./node_modules/typed.js/dist/typed.module.js";
+import Typed from "/node_modules/typed.js/dist/typed.module.js";
 
 const options = {
   strings: [
