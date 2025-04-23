@@ -1,17 +1,23 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
-/* sorting out segment sizes, colors, fonts, etc. */
+/* Global Styles */
 * {
   box-sizing: border-box;
-  --main-color: hsl(191, 79%, 72%);
   margin: 0;
   font-family: "Red Hat Display", sans-serif;
+  --main-color: hsl(191, 79%, 72%);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+p {
+  font-size: 1.25rem;
+}
+
+/* Media Queries */
 @media (max-width: 800px) {
   #about-me {
     flex-direction: column;
@@ -42,6 +48,7 @@ html {
   }
 }
 
+/* Segment Styles */
 .segment {
   height: 60rem;
   display: flex;
@@ -50,11 +57,7 @@ html {
   justify-content: center;
 }
 
-p {
-  font-size: 1.25rem;
-}
-
-/* navigation bar */
+/* Navigation Bar */
 .navbar {
   background-color: var(--main-color);
   height: 4rem;
@@ -69,7 +72,7 @@ p {
 
 .navbar-sections {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   align-items: center;
   gap: 2rem;
   margin-right: 2rem;
@@ -80,15 +83,15 @@ p {
   text-decoration: none;
 }
 
-.navbar-btn:hover {
-  transform: scale(1.1);
-}
-
 .navbar-btn {
   transition: transform 0.3s ease;
 }
 
-/* title section */
+.navbar-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Title Section */
 #title {
   background-image: url("images/horizon.png");
   background-repeat: no-repeat;
@@ -113,7 +116,11 @@ p {
   white-space: nowrap;
 }
 
-/* about me segment */
+/* About Me Section */
+#about-me {
+  margin: 0 2rem;
+}
+
 .about-me-description {
   width: 50%;
   margin-right: 10rem;
@@ -138,7 +145,7 @@ p {
   margin-top: 1.5rem;
 }
 
-/* projects segment */
+/* Projects Section */
 .project-segment {
   background-color: var(--main-color);
   color: white;
@@ -169,15 +176,21 @@ p {
   border-radius: 3rem;
 }
 
-#tech-stack {
-  margin: 0.5rem 0;
-}
-
 .project-description {
   width: 50%;
 }
 
-/* Email form */
+#project-image {
+  border-radius: 2rem;
+  height: 15rem;
+  width: auto;
+}
+
+#tech-stack {
+  margin: 0.5rem 0;
+}
+
+/* Contact Section */
 #contact {
   flex-direction: column;
   font-size: 2.5rem;
@@ -192,7 +205,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* border: 5px solid black; */
 }
 
 input,
@@ -210,7 +222,7 @@ label {
   text-align: left;
 }
 
-/* Socials */
+/* Socials Section */
 .social-logo {
   height: 10rem;
   width: auto;
@@ -223,9 +235,4 @@ label {
 #links {
   background-color: var(--main-color);
   border-bottom: 0;
-}
-#project-image {
-  border-radius: 2rem;
-  height: 15rem;
-  width: auto;
 }
